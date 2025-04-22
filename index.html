@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Mid</title>
+</head>
+<body>
+    <h2>Mid Term Exam - {Your Name}</h2>
+    <p>Environment: <span id="env"></span></p>
+
+
+    <script >
+        document.getElementById('env').innerHTML = 
+        document.location.hostname.includes("azurewebsites")? "Azure" : "Unknown";
+    </script>
+    
+
+</body>
+</html>
+
