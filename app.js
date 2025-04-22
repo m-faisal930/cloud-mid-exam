@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public')); // optional if you have CSS/JS
 
 app.get('/', (req, res) => {
-  res.render('index', { name: process.env.USER_NAME || 'Faisal' });
+  res.render('index', { name: process.env.NAME || 'Faisal' });
 });
 
 app.listen(PORT, () => {
